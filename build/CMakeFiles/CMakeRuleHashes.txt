@@ -1,0 +1,2 @@
+# Hashes of file build rules.
+fb8b557dfc442a44baa0385230e76aa3 memory_manager.pb.cc
