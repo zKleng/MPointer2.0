@@ -1,3 +1,4 @@
 /home/jorge/Desktop/MPointer2.0/build/CMakeFiles/mem-mgr.dir
+/home/jorge/Desktop/MPointer2.0/build/CMakeFiles/mem-mgr-client.dir
 /home/jorge/Desktop/MPointer2.0/build/CMakeFiles/edit_cache.dir
 /home/jorge/Desktop/MPointer2.0/build/CMakeFiles/rebuild_cache.dir
