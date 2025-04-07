@@ -123,4 +123,5 @@ set(CMAKE_MAKEFILE_PRODUCTS
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/mem-mgr.dir/DependInfo.cmake"
+  "CMakeFiles/mem-mgr-client.dir/DependInfo.cmake"
   )

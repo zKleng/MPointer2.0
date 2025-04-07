@@ -129,12 +129,26 @@ mem-mgr/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mem-mgr.dir/build.make CMakeFiles/mem-mgr.dir/build
 .PHONY : mem-mgr/fast
 
+#=============================================================================
+# Target rules for targets named mem-mgr-client
+
+# Build rule for target.
+mem-mgr-client: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mem-mgr-client
+.PHONY : mem-mgr-client
+
+# fast build rule for target.
+mem-mgr-client/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mem-mgr-client.dir/build.make CMakeFiles/mem-mgr-client.dir/build
+.PHONY : mem-mgr-client/fast
+
 memory_manager.grpc.pb.o: memory_manager.grpc.pb.cc.o
 .PHONY : memory_manager.grpc.pb.o
 
 # target to build an object file
 memory_manager.grpc.pb.cc.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mem-mgr.dir/build.make CMakeFiles/mem-mgr.dir/memory_manager.grpc.pb.cc.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mem-mgr-client.dir/build.make CMakeFiles/mem-mgr-client.dir/memory_manager.grpc.pb.cc.o
 .PHONY : memory_manager.grpc.pb.cc.o
 
 memory_manager.grpc.pb.i: memory_manager.grpc.pb.cc.i
@@ -143,6 +157,7 @@ memory_manager.grpc.pb.i: memory_manager.grpc.pb.cc.i
 # target to preprocess a source file
 memory_manager.grpc.pb.cc.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mem-mgr.dir/build.make CMakeFiles/mem-mgr.dir/memory_manager.grpc.pb.cc.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mem-mgr-client.dir/build.make CMakeFiles/mem-mgr-client.dir/memory_manager.grpc.pb.cc.i
 .PHONY : memory_manager.grpc.pb.cc.i
 
 memory_manager.grpc.pb.s: memory_manager.grpc.pb.cc.s
@@ -151,6 +166,7 @@ memory_manager.grpc.pb.s: memory_manager.grpc.pb.cc.s
 # target to generate assembly for a file
 memory_manager.grpc.pb.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mem-mgr.dir/build.make CMakeFiles/mem-mgr.dir/memory_manager.grpc.pb.cc.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mem-mgr-client.dir/build.make CMakeFiles/mem-mgr-client.dir/memory_manager.grpc.pb.cc.s
 .PHONY : memory_manager.grpc.pb.cc.s
 
 memory_manager.pb.o: memory_manager.pb.cc.o
@@ -159,6 +175,7 @@ memory_manager.pb.o: memory_manager.pb.cc.o
 # target to build an object file
 memory_manager.pb.cc.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mem-mgr.dir/build.make CMakeFiles/mem-mgr.dir/memory_manager.pb.cc.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mem-mgr-client.dir/build.make CMakeFiles/mem-mgr-client.dir/memory_manager.pb.cc.o
 .PHONY : memory_manager.pb.cc.o
 
 memory_manager.pb.i: memory_manager.pb.cc.i
@@ -167,6 +184,7 @@ memory_manager.pb.i: memory_manager.pb.cc.i
 # target to preprocess a source file
 memory_manager.pb.cc.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mem-mgr.dir/build.make CMakeFiles/mem-mgr.dir/memory_manager.pb.cc.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mem-mgr-client.dir/build.make CMakeFiles/mem-mgr-client.dir/memory_manager.pb.cc.i
 .PHONY : memory_manager.pb.cc.i
 
 memory_manager.pb.s: memory_manager.pb.cc.s
@@ -175,127 +193,176 @@ memory_manager.pb.s: memory_manager.pb.cc.s
 # target to generate assembly for a file
 memory_manager.pb.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mem-mgr.dir/build.make CMakeFiles/mem-mgr.dir/memory_manager.pb.cc.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mem-mgr-client.dir/build.make CMakeFiles/mem-mgr-client.dir/memory_manager.pb.cc.s
 .PHONY : memory_manager.pb.cc.s
 
-src/DumpManager.o: src/DumpManager.cpp.o
-.PHONY : src/DumpManager.o
+src/client/MemoryManagerClient.o: src/client/MemoryManagerClient.cpp.o
+.PHONY : src/client/MemoryManagerClient.o
 
 # target to build an object file
-src/DumpManager.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mem-mgr.dir/build.make CMakeFiles/mem-mgr.dir/src/DumpManager.cpp.o
-.PHONY : src/DumpManager.cpp.o
+src/client/MemoryManagerClient.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mem-mgr-client.dir/build.make CMakeFiles/mem-mgr-client.dir/src/client/MemoryManagerClient.cpp.o
+.PHONY : src/client/MemoryManagerClient.cpp.o
 
-src/DumpManager.i: src/DumpManager.cpp.i
-.PHONY : src/DumpManager.i
+src/client/MemoryManagerClient.i: src/client/MemoryManagerClient.cpp.i
+.PHONY : src/client/MemoryManagerClient.i
 
 # target to preprocess a source file
-src/DumpManager.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mem-mgr.dir/build.make CMakeFiles/mem-mgr.dir/src/DumpManager.cpp.i
-.PHONY : src/DumpManager.cpp.i
+src/client/MemoryManagerClient.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mem-mgr-client.dir/build.make CMakeFiles/mem-mgr-client.dir/src/client/MemoryManagerClient.cpp.i
+.PHONY : src/client/MemoryManagerClient.cpp.i
 
-src/DumpManager.s: src/DumpManager.cpp.s
-.PHONY : src/DumpManager.s
+src/client/MemoryManagerClient.s: src/client/MemoryManagerClient.cpp.s
+.PHONY : src/client/MemoryManagerClient.s
 
 # target to generate assembly for a file
-src/DumpManager.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mem-mgr.dir/build.make CMakeFiles/mem-mgr.dir/src/DumpManager.cpp.s
-.PHONY : src/DumpManager.cpp.s
+src/client/MemoryManagerClient.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mem-mgr-client.dir/build.make CMakeFiles/mem-mgr-client.dir/src/client/MemoryManagerClient.cpp.s
+.PHONY : src/client/MemoryManagerClient.cpp.s
 
-src/GarbageCollector.o: src/GarbageCollector.cpp.o
-.PHONY : src/GarbageCollector.o
+src/client/client_main.o: src/client/client_main.cpp.o
+.PHONY : src/client/client_main.o
 
 # target to build an object file
-src/GarbageCollector.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mem-mgr.dir/build.make CMakeFiles/mem-mgr.dir/src/GarbageCollector.cpp.o
-.PHONY : src/GarbageCollector.cpp.o
+src/client/client_main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mem-mgr-client.dir/build.make CMakeFiles/mem-mgr-client.dir/src/client/client_main.cpp.o
+.PHONY : src/client/client_main.cpp.o
 
-src/GarbageCollector.i: src/GarbageCollector.cpp.i
-.PHONY : src/GarbageCollector.i
+src/client/client_main.i: src/client/client_main.cpp.i
+.PHONY : src/client/client_main.i
 
 # target to preprocess a source file
-src/GarbageCollector.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mem-mgr.dir/build.make CMakeFiles/mem-mgr.dir/src/GarbageCollector.cpp.i
-.PHONY : src/GarbageCollector.cpp.i
+src/client/client_main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mem-mgr-client.dir/build.make CMakeFiles/mem-mgr-client.dir/src/client/client_main.cpp.i
+.PHONY : src/client/client_main.cpp.i
 
-src/GarbageCollector.s: src/GarbageCollector.cpp.s
-.PHONY : src/GarbageCollector.s
+src/client/client_main.s: src/client/client_main.cpp.s
+.PHONY : src/client/client_main.s
 
 # target to generate assembly for a file
-src/GarbageCollector.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mem-mgr.dir/build.make CMakeFiles/mem-mgr.dir/src/GarbageCollector.cpp.s
-.PHONY : src/GarbageCollector.cpp.s
+src/client/client_main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mem-mgr-client.dir/build.make CMakeFiles/mem-mgr-client.dir/src/client/client_main.cpp.s
+.PHONY : src/client/client_main.cpp.s
 
-src/MemoryManager.o: src/MemoryManager.cpp.o
-.PHONY : src/MemoryManager.o
+src/server/DumpManager.o: src/server/DumpManager.cpp.o
+.PHONY : src/server/DumpManager.o
 
 # target to build an object file
-src/MemoryManager.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mem-mgr.dir/build.make CMakeFiles/mem-mgr.dir/src/MemoryManager.cpp.o
-.PHONY : src/MemoryManager.cpp.o
+src/server/DumpManager.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mem-mgr.dir/build.make CMakeFiles/mem-mgr.dir/src/server/DumpManager.cpp.o
+.PHONY : src/server/DumpManager.cpp.o
 
-src/MemoryManager.i: src/MemoryManager.cpp.i
-.PHONY : src/MemoryManager.i
+src/server/DumpManager.i: src/server/DumpManager.cpp.i
+.PHONY : src/server/DumpManager.i
 
 # target to preprocess a source file
-src/MemoryManager.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mem-mgr.dir/build.make CMakeFiles/mem-mgr.dir/src/MemoryManager.cpp.i
-.PHONY : src/MemoryManager.cpp.i
+src/server/DumpManager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mem-mgr.dir/build.make CMakeFiles/mem-mgr.dir/src/server/DumpManager.cpp.i
+.PHONY : src/server/DumpManager.cpp.i
 
-src/MemoryManager.s: src/MemoryManager.cpp.s
-.PHONY : src/MemoryManager.s
+src/server/DumpManager.s: src/server/DumpManager.cpp.s
+.PHONY : src/server/DumpManager.s
 
 # target to generate assembly for a file
-src/MemoryManager.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mem-mgr.dir/build.make CMakeFiles/mem-mgr.dir/src/MemoryManager.cpp.s
-.PHONY : src/MemoryManager.cpp.s
+src/server/DumpManager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mem-mgr.dir/build.make CMakeFiles/mem-mgr.dir/src/server/DumpManager.cpp.s
+.PHONY : src/server/DumpManager.cpp.s
 
-src/MemoryManagerServiceImpl.o: src/MemoryManagerServiceImpl.cpp.o
-.PHONY : src/MemoryManagerServiceImpl.o
+src/server/GarbageCollector.o: src/server/GarbageCollector.cpp.o
+.PHONY : src/server/GarbageCollector.o
 
 # target to build an object file
-src/MemoryManagerServiceImpl.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mem-mgr.dir/build.make CMakeFiles/mem-mgr.dir/src/MemoryManagerServiceImpl.cpp.o
-.PHONY : src/MemoryManagerServiceImpl.cpp.o
+src/server/GarbageCollector.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mem-mgr.dir/build.make CMakeFiles/mem-mgr.dir/src/server/GarbageCollector.cpp.o
+.PHONY : src/server/GarbageCollector.cpp.o
 
-src/MemoryManagerServiceImpl.i: src/MemoryManagerServiceImpl.cpp.i
-.PHONY : src/MemoryManagerServiceImpl.i
+src/server/GarbageCollector.i: src/server/GarbageCollector.cpp.i
+.PHONY : src/server/GarbageCollector.i
 
 # target to preprocess a source file
-src/MemoryManagerServiceImpl.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mem-mgr.dir/build.make CMakeFiles/mem-mgr.dir/src/MemoryManagerServiceImpl.cpp.i
-.PHONY : src/MemoryManagerServiceImpl.cpp.i
+src/server/GarbageCollector.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mem-mgr.dir/build.make CMakeFiles/mem-mgr.dir/src/server/GarbageCollector.cpp.i
+.PHONY : src/server/GarbageCollector.cpp.i
 
-src/MemoryManagerServiceImpl.s: src/MemoryManagerServiceImpl.cpp.s
-.PHONY : src/MemoryManagerServiceImpl.s
+src/server/GarbageCollector.s: src/server/GarbageCollector.cpp.s
+.PHONY : src/server/GarbageCollector.s
 
 # target to generate assembly for a file
-src/MemoryManagerServiceImpl.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mem-mgr.dir/build.make CMakeFiles/mem-mgr.dir/src/MemoryManagerServiceImpl.cpp.s
-.PHONY : src/MemoryManagerServiceImpl.cpp.s
+src/server/GarbageCollector.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mem-mgr.dir/build.make CMakeFiles/mem-mgr.dir/src/server/GarbageCollector.cpp.s
+.PHONY : src/server/GarbageCollector.cpp.s
 
-src/main.o: src/main.cpp.o
-.PHONY : src/main.o
+src/server/MemoryManager.o: src/server/MemoryManager.cpp.o
+.PHONY : src/server/MemoryManager.o
 
 # target to build an object file
-src/main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mem-mgr.dir/build.make CMakeFiles/mem-mgr.dir/src/main.cpp.o
-.PHONY : src/main.cpp.o
+src/server/MemoryManager.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mem-mgr.dir/build.make CMakeFiles/mem-mgr.dir/src/server/MemoryManager.cpp.o
+.PHONY : src/server/MemoryManager.cpp.o
 
-src/main.i: src/main.cpp.i
-.PHONY : src/main.i
+src/server/MemoryManager.i: src/server/MemoryManager.cpp.i
+.PHONY : src/server/MemoryManager.i
 
 # target to preprocess a source file
-src/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mem-mgr.dir/build.make CMakeFiles/mem-mgr.dir/src/main.cpp.i
-.PHONY : src/main.cpp.i
+src/server/MemoryManager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mem-mgr.dir/build.make CMakeFiles/mem-mgr.dir/src/server/MemoryManager.cpp.i
+.PHONY : src/server/MemoryManager.cpp.i
 
-src/main.s: src/main.cpp.s
-.PHONY : src/main.s
+src/server/MemoryManager.s: src/server/MemoryManager.cpp.s
+.PHONY : src/server/MemoryManager.s
 
 # target to generate assembly for a file
-src/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mem-mgr.dir/build.make CMakeFiles/mem-mgr.dir/src/main.cpp.s
-.PHONY : src/main.cpp.s
+src/server/MemoryManager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mem-mgr.dir/build.make CMakeFiles/mem-mgr.dir/src/server/MemoryManager.cpp.s
+.PHONY : src/server/MemoryManager.cpp.s
+
+src/server/MemoryManagerServiceImpl.o: src/server/MemoryManagerServiceImpl.cpp.o
+.PHONY : src/server/MemoryManagerServiceImpl.o
+
+# target to build an object file
+src/server/MemoryManagerServiceImpl.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mem-mgr.dir/build.make CMakeFiles/mem-mgr.dir/src/server/MemoryManagerServiceImpl.cpp.o
+.PHONY : src/server/MemoryManagerServiceImpl.cpp.o
+
+src/server/MemoryManagerServiceImpl.i: src/server/MemoryManagerServiceImpl.cpp.i
+.PHONY : src/server/MemoryManagerServiceImpl.i
+
+# target to preprocess a source file
+src/server/MemoryManagerServiceImpl.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mem-mgr.dir/build.make CMakeFiles/mem-mgr.dir/src/server/MemoryManagerServiceImpl.cpp.i
+.PHONY : src/server/MemoryManagerServiceImpl.cpp.i
+
+src/server/MemoryManagerServiceImpl.s: src/server/MemoryManagerServiceImpl.cpp.s
+.PHONY : src/server/MemoryManagerServiceImpl.s
+
+# target to generate assembly for a file
+src/server/MemoryManagerServiceImpl.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mem-mgr.dir/build.make CMakeFiles/mem-mgr.dir/src/server/MemoryManagerServiceImpl.cpp.s
+.PHONY : src/server/MemoryManagerServiceImpl.cpp.s
+
+src/server/main.o: src/server/main.cpp.o
+.PHONY : src/server/main.o
+
+# target to build an object file
+src/server/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mem-mgr.dir/build.make CMakeFiles/mem-mgr.dir/src/server/main.cpp.o
+.PHONY : src/server/main.cpp.o
+
+src/server/main.i: src/server/main.cpp.i
+.PHONY : src/server/main.i
+
+# target to preprocess a source file
+src/server/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mem-mgr.dir/build.make CMakeFiles/mem-mgr.dir/src/server/main.cpp.i
+.PHONY : src/server/main.cpp.i
+
+src/server/main.s: src/server/main.cpp.s
+.PHONY : src/server/main.s
+
+# target to generate assembly for a file
+src/server/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mem-mgr.dir/build.make CMakeFiles/mem-mgr.dir/src/server/main.cpp.s
+.PHONY : src/server/main.cpp.s
 
 # Help Target
 help:
@@ -306,27 +373,34 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... mem-mgr"
+	@echo "... mem-mgr-client"
 	@echo "... memory_manager.grpc.pb.o"
 	@echo "... memory_manager.grpc.pb.i"
 	@echo "... memory_manager.grpc.pb.s"
 	@echo "... memory_manager.pb.o"
 	@echo "... memory_manager.pb.i"
 	@echo "... memory_manager.pb.s"
-	@echo "... src/DumpManager.o"
-	@echo "... src/DumpManager.i"
-	@echo "... src/DumpManager.s"
-	@echo "... src/GarbageCollector.o"
-	@echo "... src/GarbageCollector.i"
-	@echo "... src/GarbageCollector.s"
-	@echo "... src/MemoryManager.o"
-	@echo "... src/MemoryManager.i"
-	@echo "... src/MemoryManager.s"
-	@echo "... src/MemoryManagerServiceImpl.o"
-	@echo "... src/MemoryManagerServiceImpl.i"
-	@echo "... src/MemoryManagerServiceImpl.s"
-	@echo "... src/main.o"
-	@echo "... src/main.i"
-	@echo "... src/main.s"
+	@echo "... src/client/MemoryManagerClient.o"
+	@echo "... src/client/MemoryManagerClient.i"
+	@echo "... src/client/MemoryManagerClient.s"
+	@echo "... src/client/client_main.o"
+	@echo "... src/client/client_main.i"
+	@echo "... src/client/client_main.s"
+	@echo "... src/server/DumpManager.o"
+	@echo "... src/server/DumpManager.i"
+	@echo "... src/server/DumpManager.s"
+	@echo "... src/server/GarbageCollector.o"
+	@echo "... src/server/GarbageCollector.i"
+	@echo "... src/server/GarbageCollector.s"
+	@echo "... src/server/MemoryManager.o"
+	@echo "... src/server/MemoryManager.i"
+	@echo "... src/server/MemoryManager.s"
+	@echo "... src/server/MemoryManagerServiceImpl.o"
+	@echo "... src/server/MemoryManagerServiceImpl.i"
+	@echo "... src/server/MemoryManagerServiceImpl.s"
+	@echo "... src/server/main.o"
+	@echo "... src/server/main.i"
+	@echo "... src/server/main.s"
 .PHONY : help
 
 
