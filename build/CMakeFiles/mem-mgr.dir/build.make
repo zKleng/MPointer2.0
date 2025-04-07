@@ -82,75 +82,75 @@ memory_manager.grpc.pb.cc: memory_manager.pb.cc
 memory_manager.grpc.pb.h: memory_manager.pb.cc
 	@$(CMAKE_COMMAND) -E touch_nocreate memory_manager.grpc.pb.h
 
-CMakeFiles/mem-mgr.dir/src/DumpManager.cpp.o: CMakeFiles/mem-mgr.dir/flags.make
-CMakeFiles/mem-mgr.dir/src/DumpManager.cpp.o: /home/jorge/Desktop/MPointer2.0/src/DumpManager.cpp
-CMakeFiles/mem-mgr.dir/src/DumpManager.cpp.o: CMakeFiles/mem-mgr.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/jorge/Desktop/MPointer2.0/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/mem-mgr.dir/src/DumpManager.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mem-mgr.dir/src/DumpManager.cpp.o -MF CMakeFiles/mem-mgr.dir/src/DumpManager.cpp.o.d -o CMakeFiles/mem-mgr.dir/src/DumpManager.cpp.o -c /home/jorge/Desktop/MPointer2.0/src/DumpManager.cpp
+CMakeFiles/mem-mgr.dir/src/server/DumpManager.cpp.o: CMakeFiles/mem-mgr.dir/flags.make
+CMakeFiles/mem-mgr.dir/src/server/DumpManager.cpp.o: /home/jorge/Desktop/MPointer2.0/src/server/DumpManager.cpp
+CMakeFiles/mem-mgr.dir/src/server/DumpManager.cpp.o: CMakeFiles/mem-mgr.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/jorge/Desktop/MPointer2.0/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/mem-mgr.dir/src/server/DumpManager.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mem-mgr.dir/src/server/DumpManager.cpp.o -MF CMakeFiles/mem-mgr.dir/src/server/DumpManager.cpp.o.d -o CMakeFiles/mem-mgr.dir/src/server/DumpManager.cpp.o -c /home/jorge/Desktop/MPointer2.0/src/server/DumpManager.cpp
 
-CMakeFiles/mem-mgr.dir/src/DumpManager.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/mem-mgr.dir/src/DumpManager.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jorge/Desktop/MPointer2.0/src/DumpManager.cpp > CMakeFiles/mem-mgr.dir/src/DumpManager.cpp.i
+CMakeFiles/mem-mgr.dir/src/server/DumpManager.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/mem-mgr.dir/src/server/DumpManager.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jorge/Desktop/MPointer2.0/src/server/DumpManager.cpp > CMakeFiles/mem-mgr.dir/src/server/DumpManager.cpp.i
 
-CMakeFiles/mem-mgr.dir/src/DumpManager.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/mem-mgr.dir/src/DumpManager.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jorge/Desktop/MPointer2.0/src/DumpManager.cpp -o CMakeFiles/mem-mgr.dir/src/DumpManager.cpp.s
+CMakeFiles/mem-mgr.dir/src/server/DumpManager.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/mem-mgr.dir/src/server/DumpManager.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jorge/Desktop/MPointer2.0/src/server/DumpManager.cpp -o CMakeFiles/mem-mgr.dir/src/server/DumpManager.cpp.s
 
-CMakeFiles/mem-mgr.dir/src/GarbageCollector.cpp.o: CMakeFiles/mem-mgr.dir/flags.make
-CMakeFiles/mem-mgr.dir/src/GarbageCollector.cpp.o: /home/jorge/Desktop/MPointer2.0/src/GarbageCollector.cpp
-CMakeFiles/mem-mgr.dir/src/GarbageCollector.cpp.o: CMakeFiles/mem-mgr.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/jorge/Desktop/MPointer2.0/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/mem-mgr.dir/src/GarbageCollector.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mem-mgr.dir/src/GarbageCollector.cpp.o -MF CMakeFiles/mem-mgr.dir/src/GarbageCollector.cpp.o.d -o CMakeFiles/mem-mgr.dir/src/GarbageCollector.cpp.o -c /home/jorge/Desktop/MPointer2.0/src/GarbageCollector.cpp
+CMakeFiles/mem-mgr.dir/src/server/GarbageCollector.cpp.o: CMakeFiles/mem-mgr.dir/flags.make
+CMakeFiles/mem-mgr.dir/src/server/GarbageCollector.cpp.o: /home/jorge/Desktop/MPointer2.0/src/server/GarbageCollector.cpp
+CMakeFiles/mem-mgr.dir/src/server/GarbageCollector.cpp.o: CMakeFiles/mem-mgr.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/jorge/Desktop/MPointer2.0/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/mem-mgr.dir/src/server/GarbageCollector.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mem-mgr.dir/src/server/GarbageCollector.cpp.o -MF CMakeFiles/mem-mgr.dir/src/server/GarbageCollector.cpp.o.d -o CMakeFiles/mem-mgr.dir/src/server/GarbageCollector.cpp.o -c /home/jorge/Desktop/MPointer2.0/src/server/GarbageCollector.cpp
 
-CMakeFiles/mem-mgr.dir/src/GarbageCollector.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/mem-mgr.dir/src/GarbageCollector.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jorge/Desktop/MPointer2.0/src/GarbageCollector.cpp > CMakeFiles/mem-mgr.dir/src/GarbageCollector.cpp.i
+CMakeFiles/mem-mgr.dir/src/server/GarbageCollector.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/mem-mgr.dir/src/server/GarbageCollector.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jorge/Desktop/MPointer2.0/src/server/GarbageCollector.cpp > CMakeFiles/mem-mgr.dir/src/server/GarbageCollector.cpp.i
 
-CMakeFiles/mem-mgr.dir/src/GarbageCollector.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/mem-mgr.dir/src/GarbageCollector.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jorge/Desktop/MPointer2.0/src/GarbageCollector.cpp -o CMakeFiles/mem-mgr.dir/src/GarbageCollector.cpp.s
+CMakeFiles/mem-mgr.dir/src/server/GarbageCollector.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/mem-mgr.dir/src/server/GarbageCollector.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jorge/Desktop/MPointer2.0/src/server/GarbageCollector.cpp -o CMakeFiles/mem-mgr.dir/src/server/GarbageCollector.cpp.s
 
-CMakeFiles/mem-mgr.dir/src/MemoryManager.cpp.o: CMakeFiles/mem-mgr.dir/flags.make
-CMakeFiles/mem-mgr.dir/src/MemoryManager.cpp.o: /home/jorge/Desktop/MPointer2.0/src/MemoryManager.cpp
-CMakeFiles/mem-mgr.dir/src/MemoryManager.cpp.o: CMakeFiles/mem-mgr.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/jorge/Desktop/MPointer2.0/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/mem-mgr.dir/src/MemoryManager.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mem-mgr.dir/src/MemoryManager.cpp.o -MF CMakeFiles/mem-mgr.dir/src/MemoryManager.cpp.o.d -o CMakeFiles/mem-mgr.dir/src/MemoryManager.cpp.o -c /home/jorge/Desktop/MPointer2.0/src/MemoryManager.cpp
+CMakeFiles/mem-mgr.dir/src/server/MemoryManager.cpp.o: CMakeFiles/mem-mgr.dir/flags.make
+CMakeFiles/mem-mgr.dir/src/server/MemoryManager.cpp.o: /home/jorge/Desktop/MPointer2.0/src/server/MemoryManager.cpp
+CMakeFiles/mem-mgr.dir/src/server/MemoryManager.cpp.o: CMakeFiles/mem-mgr.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/jorge/Desktop/MPointer2.0/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/mem-mgr.dir/src/server/MemoryManager.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mem-mgr.dir/src/server/MemoryManager.cpp.o -MF CMakeFiles/mem-mgr.dir/src/server/MemoryManager.cpp.o.d -o CMakeFiles/mem-mgr.dir/src/server/MemoryManager.cpp.o -c /home/jorge/Desktop/MPointer2.0/src/server/MemoryManager.cpp
 
-CMakeFiles/mem-mgr.dir/src/MemoryManager.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/mem-mgr.dir/src/MemoryManager.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jorge/Desktop/MPointer2.0/src/MemoryManager.cpp > CMakeFiles/mem-mgr.dir/src/MemoryManager.cpp.i
+CMakeFiles/mem-mgr.dir/src/server/MemoryManager.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/mem-mgr.dir/src/server/MemoryManager.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jorge/Desktop/MPointer2.0/src/server/MemoryManager.cpp > CMakeFiles/mem-mgr.dir/src/server/MemoryManager.cpp.i
 
-CMakeFiles/mem-mgr.dir/src/MemoryManager.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/mem-mgr.dir/src/MemoryManager.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jorge/Desktop/MPointer2.0/src/MemoryManager.cpp -o CMakeFiles/mem-mgr.dir/src/MemoryManager.cpp.s
+CMakeFiles/mem-mgr.dir/src/server/MemoryManager.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/mem-mgr.dir/src/server/MemoryManager.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jorge/Desktop/MPointer2.0/src/server/MemoryManager.cpp -o CMakeFiles/mem-mgr.dir/src/server/MemoryManager.cpp.s
 
-CMakeFiles/mem-mgr.dir/src/MemoryManagerServiceImpl.cpp.o: CMakeFiles/mem-mgr.dir/flags.make
-CMakeFiles/mem-mgr.dir/src/MemoryManagerServiceImpl.cpp.o: /home/jorge/Desktop/MPointer2.0/src/MemoryManagerServiceImpl.cpp
-CMakeFiles/mem-mgr.dir/src/MemoryManagerServiceImpl.cpp.o: CMakeFiles/mem-mgr.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/jorge/Desktop/MPointer2.0/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/mem-mgr.dir/src/MemoryManagerServiceImpl.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mem-mgr.dir/src/MemoryManagerServiceImpl.cpp.o -MF CMakeFiles/mem-mgr.dir/src/MemoryManagerServiceImpl.cpp.o.d -o CMakeFiles/mem-mgr.dir/src/MemoryManagerServiceImpl.cpp.o -c /home/jorge/Desktop/MPointer2.0/src/MemoryManagerServiceImpl.cpp
+CMakeFiles/mem-mgr.dir/src/server/MemoryManagerServiceImpl.cpp.o: CMakeFiles/mem-mgr.dir/flags.make
+CMakeFiles/mem-mgr.dir/src/server/MemoryManagerServiceImpl.cpp.o: /home/jorge/Desktop/MPointer2.0/src/server/MemoryManagerServiceImpl.cpp
+CMakeFiles/mem-mgr.dir/src/server/MemoryManagerServiceImpl.cpp.o: CMakeFiles/mem-mgr.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/jorge/Desktop/MPointer2.0/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/mem-mgr.dir/src/server/MemoryManagerServiceImpl.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mem-mgr.dir/src/server/MemoryManagerServiceImpl.cpp.o -MF CMakeFiles/mem-mgr.dir/src/server/MemoryManagerServiceImpl.cpp.o.d -o CMakeFiles/mem-mgr.dir/src/server/MemoryManagerServiceImpl.cpp.o -c /home/jorge/Desktop/MPointer2.0/src/server/MemoryManagerServiceImpl.cpp
 
-CMakeFiles/mem-mgr.dir/src/MemoryManagerServiceImpl.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/mem-mgr.dir/src/MemoryManagerServiceImpl.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jorge/Desktop/MPointer2.0/src/MemoryManagerServiceImpl.cpp > CMakeFiles/mem-mgr.dir/src/MemoryManagerServiceImpl.cpp.i
+CMakeFiles/mem-mgr.dir/src/server/MemoryManagerServiceImpl.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/mem-mgr.dir/src/server/MemoryManagerServiceImpl.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jorge/Desktop/MPointer2.0/src/server/MemoryManagerServiceImpl.cpp > CMakeFiles/mem-mgr.dir/src/server/MemoryManagerServiceImpl.cpp.i
 
-CMakeFiles/mem-mgr.dir/src/MemoryManagerServiceImpl.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/mem-mgr.dir/src/MemoryManagerServiceImpl.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jorge/Desktop/MPointer2.0/src/MemoryManagerServiceImpl.cpp -o CMakeFiles/mem-mgr.dir/src/MemoryManagerServiceImpl.cpp.s
+CMakeFiles/mem-mgr.dir/src/server/MemoryManagerServiceImpl.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/mem-mgr.dir/src/server/MemoryManagerServiceImpl.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jorge/Desktop/MPointer2.0/src/server/MemoryManagerServiceImpl.cpp -o CMakeFiles/mem-mgr.dir/src/server/MemoryManagerServiceImpl.cpp.s
 
-CMakeFiles/mem-mgr.dir/src/main.cpp.o: CMakeFiles/mem-mgr.dir/flags.make
-CMakeFiles/mem-mgr.dir/src/main.cpp.o: /home/jorge/Desktop/MPointer2.0/src/main.cpp
-CMakeFiles/mem-mgr.dir/src/main.cpp.o: CMakeFiles/mem-mgr.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/jorge/Desktop/MPointer2.0/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/mem-mgr.dir/src/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mem-mgr.dir/src/main.cpp.o -MF CMakeFiles/mem-mgr.dir/src/main.cpp.o.d -o CMakeFiles/mem-mgr.dir/src/main.cpp.o -c /home/jorge/Desktop/MPointer2.0/src/main.cpp
+CMakeFiles/mem-mgr.dir/src/server/main.cpp.o: CMakeFiles/mem-mgr.dir/flags.make
+CMakeFiles/mem-mgr.dir/src/server/main.cpp.o: /home/jorge/Desktop/MPointer2.0/src/server/main.cpp
+CMakeFiles/mem-mgr.dir/src/server/main.cpp.o: CMakeFiles/mem-mgr.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/jorge/Desktop/MPointer2.0/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/mem-mgr.dir/src/server/main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mem-mgr.dir/src/server/main.cpp.o -MF CMakeFiles/mem-mgr.dir/src/server/main.cpp.o.d -o CMakeFiles/mem-mgr.dir/src/server/main.cpp.o -c /home/jorge/Desktop/MPointer2.0/src/server/main.cpp
 
-CMakeFiles/mem-mgr.dir/src/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/mem-mgr.dir/src/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jorge/Desktop/MPointer2.0/src/main.cpp > CMakeFiles/mem-mgr.dir/src/main.cpp.i
+CMakeFiles/mem-mgr.dir/src/server/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/mem-mgr.dir/src/server/main.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jorge/Desktop/MPointer2.0/src/server/main.cpp > CMakeFiles/mem-mgr.dir/src/server/main.cpp.i
 
-CMakeFiles/mem-mgr.dir/src/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/mem-mgr.dir/src/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jorge/Desktop/MPointer2.0/src/main.cpp -o CMakeFiles/mem-mgr.dir/src/main.cpp.s
+CMakeFiles/mem-mgr.dir/src/server/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/mem-mgr.dir/src/server/main.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jorge/Desktop/MPointer2.0/src/server/main.cpp -o CMakeFiles/mem-mgr.dir/src/server/main.cpp.s
 
 CMakeFiles/mem-mgr.dir/memory_manager.pb.cc.o: CMakeFiles/mem-mgr.dir/flags.make
 CMakeFiles/mem-mgr.dir/memory_manager.pb.cc.o: memory_manager.pb.cc
@@ -182,22 +182,22 @@ CMakeFiles/mem-mgr.dir/memory_manager.grpc.pb.cc.s: cmake_force
 
 # Object files for target mem-mgr
 mem__mgr_OBJECTS = \
-"CMakeFiles/mem-mgr.dir/src/DumpManager.cpp.o" \
-"CMakeFiles/mem-mgr.dir/src/GarbageCollector.cpp.o" \
-"CMakeFiles/mem-mgr.dir/src/MemoryManager.cpp.o" \
-"CMakeFiles/mem-mgr.dir/src/MemoryManagerServiceImpl.cpp.o" \
-"CMakeFiles/mem-mgr.dir/src/main.cpp.o" \
+"CMakeFiles/mem-mgr.dir/src/server/DumpManager.cpp.o" \
+"CMakeFiles/mem-mgr.dir/src/server/GarbageCollector.cpp.o" \
+"CMakeFiles/mem-mgr.dir/src/server/MemoryManager.cpp.o" \
+"CMakeFiles/mem-mgr.dir/src/server/MemoryManagerServiceImpl.cpp.o" \
+"CMakeFiles/mem-mgr.dir/src/server/main.cpp.o" \
 "CMakeFiles/mem-mgr.dir/memory_manager.pb.cc.o" \
 "CMakeFiles/mem-mgr.dir/memory_manager.grpc.pb.cc.o"
 
 # External object files for target mem-mgr
 mem__mgr_EXTERNAL_OBJECTS =
 
-mem-mgr: CMakeFiles/mem-mgr.dir/src/DumpManager.cpp.o
-mem-mgr: CMakeFiles/mem-mgr.dir/src/GarbageCollector.cpp.o
-mem-mgr: CMakeFiles/mem-mgr.dir/src/MemoryManager.cpp.o
-mem-mgr: CMakeFiles/mem-mgr.dir/src/MemoryManagerServiceImpl.cpp.o
-mem-mgr: CMakeFiles/mem-mgr.dir/src/main.cpp.o
+mem-mgr: CMakeFiles/mem-mgr.dir/src/server/DumpManager.cpp.o
+mem-mgr: CMakeFiles/mem-mgr.dir/src/server/GarbageCollector.cpp.o
+mem-mgr: CMakeFiles/mem-mgr.dir/src/server/MemoryManager.cpp.o
+mem-mgr: CMakeFiles/mem-mgr.dir/src/server/MemoryManagerServiceImpl.cpp.o
+mem-mgr: CMakeFiles/mem-mgr.dir/src/server/main.cpp.o
 mem-mgr: CMakeFiles/mem-mgr.dir/memory_manager.pb.cc.o
 mem-mgr: CMakeFiles/mem-mgr.dir/memory_manager.grpc.pb.cc.o
 mem-mgr: CMakeFiles/mem-mgr.dir/build.make
