@@ -10,10 +10,10 @@ int main() {
     MPointer<int> myPtr = MPointer<int>::New();
 
     // Asigna un valor remoto (esto envía la operación Set al servidor)
-    *myPtr = 42;
+    myPtr = 42;
 
     // Recupera el valor remoto (se invoca la conversión a int)
-    int value = myPtr;
+    int value = *myPtr;
     std::cout << "Valor obtenido: " << value << std::endl;
   }
   catch (const std::exception &ex) {
