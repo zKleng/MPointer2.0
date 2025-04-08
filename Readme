@@ -1,0 +1,2 @@
+./mem-mgr --port 50051 --memsize 16 --dumpFolder ../dumps
+./mem-mgr-client
