@@ -4,18 +4,19 @@
 #include <cstring>
 #include <iostream>
 #include <algorithm>
+#include <vector>
 
 MemoryManager::MemoryManager(size_t totalSize, const std::string &dumpFolder)
     : totalSize(totalSize), dumpFolder(dumpFolder), nextId(1), nextFreeOffset(0)
 {
-    memoryBlock = (char*)malloc(totalSize);
+    memoryBlock = static_cast<char*>(malloc(totalSize));
     if (!memoryBlock) {
         std::cerr << "Error reservando memoria." << std::endl;
         exit(EXIT_FAILURE);
     }
     memset(memoryBlock, 0, totalSize);
     std::cout << "Dump folder: " << dumpFolder << std::endl;
-    // ...
+    dumpMemory();
 }
 
 MemoryManager::~MemoryManager() {
@@ -96,7 +97,6 @@ bool MemoryManager::decreaseRefCount(uint32_t id) {
 void MemoryManager::freeBlock(uint32_t id) {
     auto it = blocks.find(id);
     if (it != blocks.end()) {
-        // Opcional: limpiar la memoria del bloque liberado
         memset(memoryBlock + it->second.offset, 0, it->second.size);
         blocks.erase(it);
         dumpMemory();
@@ -104,16 +104,39 @@ void MemoryManager::freeBlock(uint32_t id) {
 }
 
 size_t MemoryManager::findFreeBlock(size_t size) {
-    // Método simple: utiliza el nextFreeOffset
+    // Método simple: utilizamos nextFreeOffset
     if (nextFreeOffset + size <= totalSize) {
         return nextFreeOffset;
     }
-    // Si no hay espacio al final, se podría implementar búsqueda en huecos liberados
+    // Si no hay espacio, podrías implementar una búsqueda más compleja revisando huecos liberados.
     return SIZE_MAX;
 }
 
+void MemoryManager::defragment() {
+    std::lock_guard<std::mutex> lock(mtx);
+
+    std::vector<MemoryBlock*> blockPtrs;
+    for (auto &kv : blocks) {
+        blockPtrs.push_back(&kv.second);
+    }
+    std::sort(blockPtrs.begin(), blockPtrs.end(), [](MemoryBlock* a, MemoryBlock* b) {
+        return a->offset < b->offset;
+    });
+    size_t currentOffset = 0;
+    for (MemoryBlock* block : blockPtrs) {
+        if (block->offset != currentOffset) {
+            std::memmove(memoryBlock + currentOffset, memoryBlock + block->offset, block->size);
+            block->offset = currentOffset;
+        }
+        currentOffset += block->size;
+    }
+    nextFreeOffset = currentOffset;
+    dumpMemory();
+}
+
 void MemoryManager::dumpMemory() {
-    DumpManager::dump(memoryBlock, totalSize, dumpFolder);
+    // Usa el DumpManager para volcar la información de los bloques ocupados.
+    DumpManager::dump(blocks, memoryBlock, totalSize, dumpFolder);
 }
 
 std::unordered_map<uint32_t, MemoryBlock>& MemoryManager::getBlocks() {
