@@ -2,11 +2,16 @@
 #define DUMP_MANAGER_H
 
 #include <string>
+#include <unordered_map>
+#include "MemoryManager.h"  // Ahora MemoryBlock está definido
 
 class DumpManager {
 public:
-    // Genera un archivo dump con el estado de la memoria
-    static void dump(const char* memory, size_t size, const std::string &dumpFolder);
+    // Función de volcado "compacto" que usa la información de cada bloque.
+    static void dump(const std::unordered_map<uint32_t, MemoryBlock>& blocks,
+                     const char* memory,
+                     size_t totalSize,
+                     const std::string &dumpFolder);
 };
 
 #endif // DUMP_MANAGER_H
